@@ -26,10 +26,10 @@ var HeroesComponent = (function () {
     };
     HeroesComponent = __decorate([
         core_1.Component({
-            // moduleId: module.id,
+            moduleId: module.id,
             selector: 'my-heroes',
-            styleUrls: ['./app/heroes.component.css'],
-            templateUrl: './app/heroes.component.html'
+            styleUrls: ['heroes.component.css'],
+            templateUrl: 'heroes.component.html'
         }), 
         __metadata('design:paramtypes', [hero_service_1.HeroService])
     ], HeroesComponent);
