@@ -4,10 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HeroDetailComponent } from './hero-detail.component';
-import { HeroesComponent } from './heroes.component';
-import { HeroService } from './hero.service';
-import { DashboardComponent } from './dashboard.component';
+import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
+import { HeroesComponent } from './components/heroes/heroes.component';
+import { HeroService } from './services/hero.service';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
 	imports: [ 

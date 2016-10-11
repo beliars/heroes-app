@@ -1,6 +1,6 @@
 "use strict";
 var core_1 = require('@angular/core');
-var mock_heroes_1 = require('./mock-heroes');
+var mock_heroes_1 = require('../shared/mock-heroes');
 core_1.Injectable();
 var HeroService = (function () {
     function HeroService() {
