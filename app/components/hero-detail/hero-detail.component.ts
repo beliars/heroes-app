@@ -13,6 +13,8 @@ import { Hero } from '../../shared/hero';
 })
 
 export class HeroDetailComponent implements OnInit {
+	
+	@Input() hero: Hero;
 
 	ngOnInit(): void {
     this.route.params.forEach((params: Params) => {
@@ -31,5 +33,8 @@ export class HeroDetailComponent implements OnInit {
 		this.location.back();
 	}
 
-	@Input() hero: Hero;
+	save(): void {
+		this.heroService.update(this.hero)
+	  	.then(() => this.goBack());
+	}
 } 
